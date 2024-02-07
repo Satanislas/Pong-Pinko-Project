@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public GameObject LeftWinner;
     public GameObject RightWinner;
     public int maxScore;
+
+    public AudioSource audio;
     private void Start()
     {
         gm = this;
@@ -80,7 +82,8 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("You have amused the gods of this silly game");
                     ball.transform.localScale = new Vector3(3,3,3);
-                }            }
+                }           
+            }
         }
     }
 }
