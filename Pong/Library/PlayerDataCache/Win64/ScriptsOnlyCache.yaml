@@ -6,7 +6,10 @@ ScriptsOnlyBuild:
     - GameManager
     - Goal
     - PaddlePlayer
+    - PickUp
+    - PickUpManager
     - Restart
+    - Rotator
     - ball
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
@@ -151,6 +154,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6780}
     - Class: 114
       Script: {instanceID: 7560}
+    - Class: 114
+      Script: {instanceID: 23670}
+    - Class: 114
+      Script: {instanceID: 24940}
+    - Class: 114
+      Script: {instanceID: 25014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1040,6 +1049,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c13adf70ec9777b05527d1b32edc4c16
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Rotator
+  - hash:
+      serializedVersion: 2
+      Hash: 1f58554c14035b16cee28b0c41b23f34
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PickUp
+  - hash:
+      serializedVersion: 2
+      Hash: ccc0c8fa4635aaaf5e3eac9a78a6eefb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PickUpManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -61,6 +61,7 @@ public class ball : MonoBehaviour
     private void PlaySound()
     {
         Debug.Log("Playing sound");
+        audio.pitch = Math.Max(speed/20,1);
         if (audio.isPlaying)
         {
             AudioSource newAudio = gameObject.AddComponent<AudioSource>();
@@ -77,6 +78,12 @@ public class ball : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             GameManager.gm.Score(other.GetComponent<Goal>().axis == Goal.Axis.Left);
+            return;
+        }
+
+        if (other.CompareTag("PickUp"))
+        {
+            other.GetComponent<PickUp>().Execute(this);
             return;
         }
         bool isLeft = other.GetComponent<PaddlePlayer>().axis == PaddlePlayer.Axis.Left;

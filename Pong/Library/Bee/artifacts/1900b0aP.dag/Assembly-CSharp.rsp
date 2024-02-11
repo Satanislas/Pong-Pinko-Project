@@ -313,7 +313,10 @@
 "Assets/GameManager.cs"
 "Assets/Goal.cs"
 "Assets/PaddlePlayer.cs"
+"Assets/PickUp.cs"
+"Assets/PickUpManager.cs"
 "Assets/Restart.cs"
+"Assets/Rotator.cs"
 -langversion:9.0
 
 /deterministic

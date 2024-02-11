@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
                 Destroy(ball);
                 return;
             }
+
+            if (scoreLeft == maxScore - 1)
+            {
+                textLeft.color = Color.red;
+            }
         }
         else
         {
@@ -59,6 +64,11 @@ public class GameManager : MonoBehaviour
                 RightWinner.SetActive(true);
                 Destroy(ball);
                 return;
+            }
+            
+            if (scoreRight == maxScore - 1)
+            {
+                textRight.color = Color.red;
             }
         }
         
